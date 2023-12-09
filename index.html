@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>ME</title>
+    <title>ME - Personal Portfolio</title>
 </head>
 
 <body>
@@ -22,21 +22,29 @@
     <nav>
         <div class="container">
             <ul>
-                <li><a href="home.html" target="_blank">Home</a></li>
-                <li><a href="about.html" target="_blank">About Me</a></li>
-                <li><a href="skills.html" target="_blank">Skills</a></li>
-                <li><a href="projects.html" target="_blank">Projects</a></li>
-                <li><a href="education.html" target="_blank">Education</a></li>
-                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="#" onclick="showContent('home')">Home</a></li>
+                <li><a href="#" onclick="showContent('about')">About Me</a></li>
+                <li><a href="#" onclick="showContent('skills')">Skills</a></li>
+                <li><a href="#" onclick="showContent('projects')">Projects</a></li>
+                <li><a href="#" onclick="showContent('education')">Education</a></li>
+                <li><a href="#" onclick="showContent('contact')">Contact</a></li>
             </ul>
         </div>
     </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <h2>This is the Home Page</h2>
+            <p>Welcome to my personal portfolio website.</p>
+        </div>
+    </section>
 
     <!-- About Me Section -->
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>Click <a href="about.html" target="_blank">here</a> to go to the About Me page.</p>
+            <p>I am a computer science enthusiast with a passion for coding and problem-solving. Currently pursuing a degree in Computer Science.</p>
         </div>
     </section>
 
@@ -44,6 +52,12 @@
     <section id="skills">
         <div class="container">
             <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <!-- Add more skills as needed -->
+            </ul>
         </div>
     </section>
 
@@ -51,7 +65,8 @@
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
-            <!-- Add your project details and images here -->
+            <p>Explore some of the exciting projects I've worked on:</p>
+            <!-- Add project details and images here -->
         </div>
     </section>
 
@@ -59,7 +74,7 @@
     <section id="education">
         <div class="container">
             <h2>Education</h2>
-            <p>Add your educational background and details here.</p>
+            <p>Currently pursuing a Bachelor's degree in Computer Science at XYZ University.</p>
         </div>
     </section>
 
@@ -67,16 +82,35 @@
     <section id="contact">
         <div class="container">
             <h2>Contact</h2>
-            <p>Add a contact form or provide contact information here.</p>
+            <p>Feel free to reach out to me. You can contact me at: your.email@example.com</p>
         </div>
     </section>
 
     <!-- Footer Section -->
     <footer>
         <div class="container">
-            <p>&copy; 2023 Your Name</p>
+            <p>&copy; 2023 Gabriel</p>
         </div>
     </footer>
+
+    <script>
+        function showContent(sectionId) {
+            // Hide all sections
+            var sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            var selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+        }
+
+        // Show the home section by default
+        showContent('home');
+    </script>
 
 </body>
 
