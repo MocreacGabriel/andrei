@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9; /* Light gray background */
     color: #333;
     margin: 0;
     padding: 0;
@@ -13,14 +13,14 @@ body {
 }
 
 header {
-    background-color: #007BFF;
+    background-color: #2C3E50; /* Dark blue-gray */
     color: #fff;
     text-align: center;
     padding: 20px 0;
 }
 
 nav {
-    background-color: #333;
+    background-color: #34495E; /* Darker blue-gray */
     color: #fff;
     padding: 10px 0;
 }
@@ -42,7 +42,7 @@ section {
 }
 
 h2 {
-    color: #007BFF;
+    color: #3498DB; /* Light blue */
 }
 
 ul {
@@ -50,12 +50,11 @@ ul {
 }
 
 footer {
-    background-color: #333;
+    background-color: #2C3E50; /* Dark blue-gray */
     color: #fff;
     text-align: center;
     padding: 10px 0;
     position: fixed;
-    bottom: 0;
-    width: 100%;
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
 }
-
